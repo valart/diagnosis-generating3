@@ -7,7 +7,7 @@ automaadi abil ning kõik sündmused ja üleminekud omavad tõenäosust, mida ka
 Projektis *data/input* kausta sees on olemas neli põhikausta: *chapter, subchapter, section, subsection*, mis
 vastavad [RHK-10][1] kategooriatele. Iga kood on eraldiseisev objekt, millel on järgmised väljad:
 
-*code* - diagnoosile vastab kood
+*code* - diagnoosile vastav kood
 
 *age* - igale vanusele (0 kuni 95) ja soole vastav diagnoosi tekkimistõenäosus
 
@@ -16,6 +16,16 @@ vastavad [RHK-10][1] kategooriatele. Iga kood on eraldiseisev objekt, millel on 
 *chronic* - kas haigus on krooniline
 
 *next* - võimalikud üleminekud antud olekust (lõppolekust) koos tõenäosusega
+
+Samuti on olemas kaust *data/trajectories*, mis vastab trajektooride lisamise eest. Igale trajektoorile vastab kindel diagnoosi kood, millest ta algab. Trajektoori lisamiseks antud kausta sees peab looma kausta algdiaagnoosi nimelise koodiga ning lisama sinna eraldiseisvaid objekte, millel on järgmised väljad:
+
+*code* - diagnoosile vastav kood
+
+*transaction* - massiiv objektidest millel on
+    
+    *probability* - tulevase diagnoosi tekkimis tõenäosus
+    
+    *period* - kuuline ajavahemik, mille jooksul andtud diagnoos saab tekkida
 
 [1]: https://rhk.sm.ee/
 
