@@ -39,4 +39,4 @@ Põhikäsud on `python main.py [-p populatsiooni arv] [-plot RHK-10 peatükki ko
 
 2. `python main.py -plot chapter` genereerib graafiku, mille peal on näha kõikide daignooside peatükkide jaotust
 
-3. `python main.py -model 5 F` genereerib *HTML* koodi, mille peal on näha kogu tõenäosusliku automaadi
+3. `python main.py -model 5 F` genereerib *HTML* koodi, mille peal on näha kogu tõenäosusliku automaadi, mis vastab naissoole vanuses 5
